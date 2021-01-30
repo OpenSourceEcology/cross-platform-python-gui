@@ -63,7 +63,7 @@ ${PIP_PATH} install --upgrade --force-reinstall --user pip setuptools
 
 # install kivy and all other python dependencies with pip into our virtual env
 #source /tmp/kivy_venv/bin/activate
-${PIP_PATH} install --upgrade --force-reinstall --user Cython==0.29.10 || exit 1
+#${PIP_PATH} install --upgrade --force-reinstall --user Cython==0.29.10 || exit 1
 ${PIP_PATH} install --upgrade --force-reinstall --user -r requirements.txt || exit 1
 ${PIP_PATH} install --upgrade --force-reinstall --user PyInstaller || exit 1
 
