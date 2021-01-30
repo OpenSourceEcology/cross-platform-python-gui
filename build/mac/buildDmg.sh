@@ -11,8 +11,8 @@ set -x
 #
 # Authors: Michael Altfield <michael@buskill.in>
 # Created: 2020-06-22
-# Updated: 2020-09-17
-# Version: 0.2
+# Updated: 2021-01-30
+# Version: 0.3
 ################################################################################
 
 
@@ -20,8 +20,8 @@ set -x
 # SETTINGS #
 ############
 
-PYTHON_PATH="`find /usr/local/Cellar/python@3.7 -type f -name python3.7 | head -n1`"
-PIP_PATH="`find /usr/local/Cellar/python@3.7 -type f -name pip3.7 | head -n1`"
+PYTHON_PATH="`find /usr/local/Cellar/python@3* -type f -wholename *bin/python3* | sort -n | uniq | head -n1`"
+PIP_PATH="`find /usr/local/Cellar/python@3* -type f -wholename *bin/pip3* | sort -n | uniq | head -n1`"
 APP_NAME='helloWorld'
 
 PYTHON_VERSION="`${PYTHON_PATH} --version | cut -d' ' -f2`"
