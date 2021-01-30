@@ -13,7 +13,7 @@ from kivy.uix.label import Label
 class MyApp(App):
 
     def build(self):
-        return Label(text='Hello world!')
+        return Label(text='Testing buggy tag issue number 7')
 
 
 if __name__ == '__main__':
